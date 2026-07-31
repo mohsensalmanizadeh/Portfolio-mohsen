@@ -6,4 +6,4 @@
 - نمایش پروژه‌ها
 - معرفی شخصی
 - طراحی مدرن
-- HTML، CSS و Tailwind CSS
+- TailwindCss
