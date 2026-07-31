@@ -9,9 +9,9 @@
   <body class="bg-linear-to-r from-bg-card via-bg to-bg-secondary">
     <!--  Start Header -->
     <header class="bg-bg fixed w-full">
-      <section class="w-[80%] mx-auto flex justify-between items-center">
+      <section class="w-[80%] h-20 mx-auto flex justify-between items-center">
         <div>
-          <img src="./public/img/Logo.png" alt="Logo" class="w-45" />
+          <img src="./public/img/Logo.png" alt="Logo" class="w-45 -ml-8" />
         </div>
 
         <nav>
@@ -69,24 +69,25 @@
             👋Hello I'm Mohsen
           </p>
 
-          <p class="pt-10 leading-9">
+          <p class="pt-10 leading-10">
             I build
             <span class="bg-[#1b214e] p-2 rounded-[10px]">responsive</span> and
-            modern web interfaces using <br />
-            <span class="bg-[#1b214e] p-2 rounded-[10px]"
-              >HTML, CSS, Flexbox, CSS Grid,</span
-            >
-            and Tailwind CSS, with a strong focus on clean code, performance,
-            and user experience.
+            modern web interfaces using HTML, CSS, Flexbox CSS Grid and
+            <span class="bg-[#1b214e] p-2 rounded-[10px]">Tailwind CSS</span>
+            with a strong focus on clean code, performance, and user experience.
           </p>
 
           <div
-            class="flex gap-8 justify-center items-center pt-10 xl:justify-start"
+            class="flex flex-col xl:flex-row gap-8 justify-center items-center pt-10 xl:justify-start"
           >
-            <a href="#" class="bg-blue-600 py-3.5 px-8 rounded-2xl"
+            <a
+              href="#"
+              class="bg-blue-600 py-3.5 px-8 rounded-2xl w-full xl:w-auto"
               >View Project</a
             >
-            <a href="#" class="py-3.5 px-6 rounded-2xl border border-text-muted"
+            <a
+              href="#"
+              class="py-3.5 px-6 rounded-2xl border border-text-muted w-full xl:w-auto"
               >Download Resume</a
             >
           </div>
@@ -145,12 +146,12 @@
                 <img
                   src="./public/img/Component 2.png"
                   alt="components"
-                  class="w-24 md:w-14 xl:w-24 p-3 rounded-4xl bg-border-light"
+                  class="w-20 md:w-14 xl:w-24 p-3 rounded-4xl bg-border-light"
                 />
               </div>
               <div class="">
-                <h3 class="font-bold text-2xl mb-1">Front-End Developer</h3>
-                <p class="text-[16px]">
+                <h3 class="font-bold text-[16px] mb-1">Front-End Developer</h3>
+                <p class="text-[10px] sm:text-[16px]">
                   Building responsive and modern web interfaces with HTML, CSS,
                   Flexbox, CSS Grid, and Tailwind CSS.
                 </p>
@@ -165,12 +166,12 @@
                 <img
                   src="./public/img/Component 2 (1).png"
                   alt="components"
-                  class="w-24 md:w-14 xl:w-24 p-3 rounded-4xl bg-border-light"
+                  class="w-20 md:w-14 xl:w-24 p-3 rounded-4xl bg-border-light"
                 />
               </div>
               <div class="">
-                <h3 class="font-bold text-2xl mb-1">Continuous Learner</h3>
-                <p class="text-[16px]">
+                <h3 class="font-bold text-[16px] mb-1">Continuous Learner</h3>
+                <p class="text-[10px] sm:text-[16px]">
                   Continuously learning new technologies and improving my
                   development skills through real-world projects.
                 </p>
@@ -185,14 +186,14 @@
                 <img
                   src="./public/img/Component 2 (2).png"
                   alt="components"
-                  class="w-24 md:w-14 xl:w-24 p-3 rounded-4xl bg-border-light"
+                  class="w-20 md:w-14 xl:w-24 p-3 rounded-4xl bg-border-light"
                 />
               </div>
               <div class="">
-                <h3 class="font-bold text-2xl mb-1">
+                <h3 class="font-bold text-[16px] mb-1">
                   Computer Engineering Student
                 </h3>
-                <p class="text-[16px]">
+                <p class="text-[10px] sm:text-[16px]">
                   Currently pursuing my Bachelor's degree in Computer
                   Engineering and continuously developing my technical skills.
                 </p>
@@ -217,7 +218,7 @@
         </div>
 
         <div
-          class="mt-6 grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 col-span-4 gap-4"
+          class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 col-span-4 gap-4"
         >
           <div class="box">
             <img src="./public/img/code.png" alt="code" class="xl:w-12" />
@@ -237,7 +238,7 @@
           </div>
           <div class="box">
             <img src="./public/img/code.png" alt="code" class="xl:w-12" />
-            Tailwind
+            TailwindCss
           </div>
         </div>
       </section>
@@ -256,14 +257,19 @@
           </p>
         </div>
 
-        <div class="flex justify-center items-center text-white gap-5 mt-14">
-          <a href="#" class="bg-blue-600 py-3 px-4 rounded-2xl flex gap-1"
+        <div
+          class="flex justify-center items-center flex-col lg:flex-row text-white gap-5 mt-14"
+        >
+          <a
+            href="#"
+            class="bg-blue-600 py-3 px-4 rounded-2xl flex gap-1 justify-center w-full lg:w-auto"
             >View All Projects
             <img src="./public/img/SVG.png" alt="arrow" class="w-5" />
           </a>
           <a
-            href="#"
-            class="flex gap-1 text-[16px] border border-blue-700 py-3 px-4 rounded-2xl"
+            href="https://github.com/mohsensalmanizadeh"
+            class="flex gap-1 justify-center text-[16px] border border-blue-700 py-3 px-4 rounded-2xl w-full lg:w-auto"
+            target="_blank"
           >
             <img
               src="./public/img/github.png"
@@ -278,7 +284,7 @@
       <!-- Card Project -->
 
       <section
-        class="mt-10 text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4"
+        class="mt-10 text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-14"
       >
         <!--  Card One -->
         <div class="rounded-2xl overflow-hidden bg-[#0f1728]">
@@ -292,6 +298,7 @@
             </p>
             <a
               href="https://cyrus-n20xgdb5z-awatdev.vercel.app/"
+              target="_blank"
               class="flex justify-center gap-4 mt-7 w-full bg-accent py-4 px-5 rounded-2xl text-center"
               >Explore Project
               <img src="./public/img/SVG.png" alt="arrow" />
@@ -311,6 +318,7 @@
             </p>
             <a
               href="https://onlineshop-9q3g9yywc-awatdev.vercel.app/"
+              target="_blank"
               class="flex justify-center gap-4 mt-7 w-full bg-accent py-4 px-5 rounded-2xl text-center"
               >Explore Project
               <img src="./public/img/SVG.png" alt="arrow" />
@@ -332,6 +340,7 @@
             </p>
             <a
               href="https://portfolio-two-eta-dun.vercel.app/"
+              target="_blank"
               class="flex justify-center gap-4 mt-7 w-full bg-accent py-4 px-5 rounded-2xl"
               >Explore Project
               <img src="./public/img/SVG.png" alt="arrow" />
@@ -340,5 +349,55 @@
         </div>
       </section>
     </main>
+
+    <!-- Add Footer -->
+
+    <footer class="bg-[#0e1729]">
+      <section
+        class="text-white w-[80%] mx-auto py-7 md:flex md:justify-between"
+      >
+        <!--    Text Left Section -->
+        <div class="md:basis-1/2">
+          <h3 class="font-bold text-2xl mb-4 text-blue-400">Let's Connect!</h3>
+          <p>
+            I'm currently open to new opportunities and collaborations. Feel
+            free to reach out!
+          </p>
+          <a
+            href="mailto:mohsensalmanizadeh67@gmail.com"
+            class="flex justify-center mt-6 bg-blue-600 py-3 px-4 rounded-2xl w-full md:w-40"
+          >
+            <img src="./public/img/SVG_margin.png" alt="Email" />
+            Conect Me
+          </a>
+        </div>
+
+        <!-- actions Right Section -->
+
+        <div
+          class="flex justify-center items-center gap-7 mt-17 md:basis-1/2 md:justify-end"
+        >
+          <a
+            href="https://github.com/mohsensalmanizadeh"
+            class="bg-[#0f172b] p-5 border border-blue-500 rounded-full"
+          >
+            <img src="./public/img/Vector.png" alt="github" />
+          </a>
+
+          <a
+            href="https://instagram.com/awat.dev"
+            class="p-5 bg-blue-500 rounded-full"
+          >
+            <img src="./public/img/instagram.png" alt="instagramLogo" />
+          </a>
+        </div>
+      </section>
+
+      <!-- Copy Right  -->
+
+      <div class="text-white w-[80%] mx-auto text-center py-7">
+        <p>&copy Copyright 2026. Made by Mohsen</p>
+      </div>
+    </footer>
   </body>
 </html>
