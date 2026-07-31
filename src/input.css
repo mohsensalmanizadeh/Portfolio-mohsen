@@ -56,3 +56,7 @@
     }
   }
 }
+
+@utility box {
+  @apply bg-[#0f182b] flex flex-col justify-center items-center gap-8  p-5 rounded-2xl border border-icon-bg h-36;
+}
