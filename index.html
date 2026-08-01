@@ -4,39 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohsen</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body class="bg-linear-to-r from-bg-card via-bg to-bg-secondary">
     <!--  Start Header -->
     <header class="bg-bg fixed w-full">
-      <section class="w-[80%] h-20 mx-auto flex justify-between items-center">
+      <section
+        class="w-[80%] h-20 mx-auto flex flex-row-reverse justify-between items-center"
+      >
         <div>
-          <img src="./public/img/Logo.png" alt="Logo" class="w-45 -ml-8" />
+          <img src="./public/img/Logo.png" alt="Logo" class="w-45 -mr-8" />
         </div>
 
-        <nav>
-          <button type="button" class="block lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-9 cursor-pointer text-white block lg:hidden"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-              />
-            </svg>
+        <nav class="relative">
+          <button
+            id="menuBtn"
+            type="button"
+            class="relative z-50 block lg:hidden"
+          >
+            <i class="fa-solid fa-bars text-3xl text-white"></i>
           </button>
 
-          <ul class="text-white hidden lg:flex gap-7">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul
+            id="mobileMenu"
+            class="fixed top-0 -left-96 z-40 p-8 mt-14 lg:mt-0 w-[16rem] h-screen bg-bg text-white flex flex-col gap-10 transition-all duration-300 lg:static lg:left-auto lg:top-auto lg:h-auto lg:w-auto lg:flex-row lg:items-center lg:gap-8 lg:p-0 lg:bg-transparent"
+          >
+            <li>
+              <a
+                href="#"
+                class="bg-icon-bg lg:bg-transparent p-6 rounded-2xl flex flex-col gap-7"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="bg-icon-bg lg:bg-transparent p-6 rounded-2xl flex flex-col gap-7"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="bg-icon-bg lg:bg-transparent p-6 rounded-2xl flex flex-col gap-7"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="bg-icon-bg lg:bg-transparent p-6 rounded-2xl flex flex-col gap-7"
+                >Contact</a
+              >
+            </li>
           </ul>
         </nav>
       </section>
@@ -399,5 +426,7 @@
         <p>&copy Copyright 2026. Made by Mohsen</p>
       </div>
     </footer>
+
+    <script src="./src/main.js"></script>
   </body>
 </html>
