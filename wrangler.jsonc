@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "portfolio-mohsen",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": ".",
+    "exclude": [
+      "node_modules/**",
+      ".git/**",
+      "package.json",
+      "package-lock.json",
+      "README.md",
+      "wrangler.jsonc"
+    ]
+  }
+}
