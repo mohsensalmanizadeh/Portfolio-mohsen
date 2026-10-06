@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "build": "node build.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,9 @@
     "@tailwindcss/cli": "^4.3.3",
     "tailwind": "^4.0.0",
     "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "html-minifier-terser": "^7.2.0",
+    "javascript-obfuscator": "^5.9.0"
   }
 }
