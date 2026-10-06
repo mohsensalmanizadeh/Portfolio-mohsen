@@ -1,11 +1,17 @@
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-const icon = menuBtn.querySelector("i");
+//  Prevent right-click context menu
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+});
 
-menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("-left-96");
-  mobileMenu.classList.toggle("left-0");
-
-  icon.classList.toggle("fa-bars");
-  icon.classList.toggle("fa-xmark");
+// Prevent certain key combinations (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C, Ctrl+U)
+document.addEventListener("keydown", (e) => {
+  if (
+    e.key === "F12" ||
+    (e.ctrlKey && e.shiftKey && e.key === "I") ||
+    (e.ctrlKey && e.shiftKey && e.key === "J") ||
+    (e.ctrlKey && e.shiftKey && e.key === "C") ||
+    (e.ctrlKey && e.key === "U")
+  ) {
+    e.preventDefault();
+  }
 });
