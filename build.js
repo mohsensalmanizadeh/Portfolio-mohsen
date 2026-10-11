@@ -22,7 +22,7 @@ console.log("Building Tailwind CSS...");
 
 execSync(
   "npx @tailwindcss/cli -i ./src/input.css -o ./dist/src/output.css --minify",
-  { stdio: "inherit" },
+  { stdio: "inherit" }
 );
 
 // -------------------------
@@ -39,12 +39,12 @@ const obfuscated = JavaScriptObfuscator.obfuscate(js, {
   deadCodeInjection: true,
   stringArray: true,
   stringArrayEncoding: ["base64"],
-  stringArrayThreshold: 0.75,
+  stringArrayThreshold: 0.75
 });
 
 fs.writeFileSync(
   path.join(dist, "src", "main.js"),
-  obfuscated.getObfuscatedCode(),
+  obfuscated.getObfuscatedCode()
 );
 
 // -------------------------
@@ -60,7 +60,7 @@ minify(html, {
   removeComments: true,
   removeRedundantAttributes: true,
   removeEmptyAttributes: true,
-  useShortDoctype: true,
+  useShortDoctype: true
 }).then((result) => {
   fs.writeFileSync(path.join(dist, "index.html"), result);
 
@@ -74,6 +74,6 @@ minify(html, {
 
 if (fs.existsSync("./public")) {
   fs.cpSync("./public", path.join(dist, "public"), {
-    recursive: true,
+    recursive: true
   });
 }
