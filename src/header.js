@@ -11,7 +11,7 @@ export function header() {
           <i id="menu-icon" class="fa-solid fa-bars text-3xl"></i>
         </button>
         <div
-          class="relative hidden md:flex md:flex-row-reverse py-5 w-75.5 items-center justify-between overflow-hidden rounded-[17px] bg-black px-3"
+          class="relative hidden md:flex md:flex-row-reverse py-5 w-75.5 items-center justify-around overflow-hidden rounded-[17px] bg-black px-3"
         >
           <!-- متن -->
           <span class="relative z-10 flex-1 text-center text-sm text-white">
@@ -19,7 +19,7 @@ export function header() {
           </span>
           <!-- دایره -->
           <span
-            class="relative z-10 mr-1 h-5 w-5 shrink-0 rounded-full bg-green-400"
+            class="relative z-10 mr-1 h-5 w-5 shrink-0 rounded-full bg-pink-100"
           ></span>
         </div>
         <!--  -->

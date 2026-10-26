@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "name": "سلام ، من محسنم",
+    "role": "یک فرانت اند دولوپر",
+    "introduction": "عاشق یادگیری، حل مسئله و تبدیل ایده‌ها به واقعیت هستم",
+    "hero_image": "public/img/mohsen.png",
+    "technologies": [
+      {
+        "id": 1,
+        "name": "Java Script",
+        "icon": "public/img/Js.png",
+        "url": null
+      },
+      {
+        "id": 2,
+        "name": "TailwindCss",
+        "icon": "./public/img/tailwind.jpeg",
+        "url": null
+      },
+      {
+        "id": 3,
+        "name": "HTML",
+        "icon": "public/img/html .png",
+        "url": null
+      },
+      {
+        "id": 4,
+        "name": "vsCode",
+        "icon": "public/img/vscode.png",
+        "url": null
+      },
+      {
+        "id": 5,
+        "name": "git",
+        "icon": "public/img/git.png",
+        "url": null
+      },
+      {
+        "id": 6,
+        "name": "wordpress",
+        "icon": "public/img/wordpress.png",
+        "url": null
+      }
+    ],
+    "experience": "+2 سال سابقه کاری",
+    "completed_projects": "+4 پروژه انجام شده"
+  }
+]

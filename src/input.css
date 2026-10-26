@@ -1,2 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+@font-face {
+  font-family: vazir;
+  src: url(../public/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Thin-FD-WOL.ttf)
+    format("TrueType");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url(../public/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Light-FD-WOL.ttf)
+    format("TrueType");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url(../public/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.ttf)
+    format("TrueType");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url(../public/fonts/vazir/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.ttf)
+    format("TrueType");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    font-family: "vazir", sans-serif;
+    font-weight: 500;
+  }
+}
+
+@theme {
+  --breakpoint-sl: 320px;
+  --breakpoint-sd: 400px;
+  --breakpoint-mid: 500px;
+  --breakpoint-large: 550px;
+  --breakpoint-xlarge: 900px;
+}
+
+.my-pagination .swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: #9ca3af !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+
+.my-pagination .swiper-pagination-bullet-active {
+  width: 20px !important;
+  border-radius: 9999px !important;
+  background-color: #000 !important;
+}
+
+.skills-pagination .swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: #9ca3af !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+
+.skills-pagination .swiper-pagination-bullet-active {
+  width: 20px !important;
+  border-radius: 9999px !important;
+  background-color: #000 !important;
+}
