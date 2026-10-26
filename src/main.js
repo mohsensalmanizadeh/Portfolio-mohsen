@@ -1,6 +1,6 @@
 // import header
 
-import { header, headerMenu } from "../src/components/header.js";
+import { header, headerMenu } from "./header.js";
 
 const headerElement = header();
 
