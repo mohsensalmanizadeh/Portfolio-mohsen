@@ -19,7 +19,7 @@ export function header() {
           </span>
           <!-- دایره -->
           <span
-            class="relative z-10 mr-1 h-5 w-5 shrink-0 rounded-full bg-pink-100"
+            class="relative z-10 mr-1 h-5 w-5 shrink-0 rounded-full bg-green-400"
           ></span>
         </div>
         <!--  -->
