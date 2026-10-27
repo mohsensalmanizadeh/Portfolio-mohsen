@@ -25,10 +25,10 @@ export function header() {
         <!--  -->
         <nav
           id="menu"
-          class="absolute inset-0 flex sl:flex-col items-center justify-center gap-12 px-6 text-sm font-medium w-full bg-white shadow-sm transition-all duration-300 h-70 md:translate-0 md:rounded-2xl md:static md:h-auto md:w-112.5 md:flex-row md:bg-black md:text-white md:py-5! xl:w-157 rounded-b-4xl -translate-y-full z-40  ease-in "
+          class="absolute inset-0 flex sl:flex-col items-center justify-center gap-12 px-6 text-sm font-medium w-full bg-white shadow-sm transition-all duration-300 h-80 md:translate-0 md:rounded-2xl md:static md:h-auto md:w-112.5 md:flex-row md:bg-black md:text-white md:py-5! xl:w-157 rounded-b-4xl -translate-y-full z-40  ease-in "
         >
           <ul
-            class="mt-15 flex flex-col items-center justify-center gap-7 md:flex-row md:m-auto"
+            class="mt-17 flex flex-col items-center justify-center gap-7 md:flex-row md:m-auto"
           >
             <li
               class="btext-center py-2 px-3 rounded-lg md:bg-transparent md:p-0 md:w-auto"
@@ -46,6 +46,15 @@ export function header() {
                 href="#projects"
                 class="transition-colors text-gray-800 font-bold text-sm md:text-white"
                 >نمونه‌کارها</a
+              >
+            </li>
+            <li
+              class="text-center py-2 px-3 rounded-lg md:bg-transparent md:p-0 md:w-auto"
+            >
+              <a
+                href="#projects"
+                class="transition-colors text-gray-800 font-bold text-sm md:text-white"
+                >وبلاگ</a
               >
             </li>
             <li
