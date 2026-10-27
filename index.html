@@ -53,6 +53,10 @@
 
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
 
@@ -62,11 +66,42 @@
 
   <body>
     <main class="pt-30">
+      <!-- Hero Section -->
       <section
         id="hero-section"
         class="xl:max-w-[80%] mx-auto flex items-start gap-3 md:gap-6 md:items-center px-4"
       ></section>
+
+      <!-- Section Project -->
+      <section class="w-full mt-15 px-2 md:px-0">
+        <!-- title -->
+        <div
+          class="max-w-[80%] mx-auto flex gap-1 items-center justify-between mb-10"
+        >
+          <div class="lg:basis-[85%]">
+            <h2 class="font-bold text-lg md:text-center md:text-2xl">
+              نمونه کار های من
+            </h2>
+          </div>
+
+          <div class="lg:basis-[15%] justify-end">
+            <button class="font-semibold flex items-center gap-1">
+              <a href="#">
+                مشاهده همه
+                <i class="fa fa-arrow-left"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+        <!-- Slider -->
+        <div class="swiper mySwiper sd:h-100 h-130 mb-10">
+          <div class="swiper-wrapper sd:h-100 h-130"></div>
+        </div>
+        <div class="my-pagination flex justify-center"></div>
+      </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" defer src="./src/main.js"></script>
   </body>
 </html>
