@@ -17,3 +17,8 @@ getProfile();
 
 import { getProject } from "./project.js";
 getProject();
+
+// importing skills
+
+import { getSkills } from "./skills.js";
+getSkills();

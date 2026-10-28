@@ -9,7 +9,7 @@ export async function getProject() {
   try {
     const response = await fetch(new URL("./project.json", import.meta.url));
 
-    const projects = response.json();
+    const projects = await response.json();
 
     if (!projects.length) return;
 
@@ -64,13 +64,14 @@ export async function getProject() {
                   </div>
                 </div>
 
-                <div class="text-white mt-10 flex flex-col items-end">
+                <div class="text-white mt-10 flex flex-col items-start">
                   <p class="text-right">
                     ${project.description}
                   </p>
 
                   <a
-                    href="#"
+                    href="${project.link}"
+                    target="_blank"
                     class="bg-[#7E7E7E] py-3 px-10 rounded-2xl mt-5"
                   >
                     بیشتر

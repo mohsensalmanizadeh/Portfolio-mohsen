@@ -1,5 +1,6 @@
 //get Elements
 const heroSection = document.getElementById("hero-section");
+const errorMessage = document.getElementById("error-message");
 
 export async function getProfile() {
   try {
@@ -139,7 +140,7 @@ export async function getProfile() {
             <img
               src="${vscodeIcon?.icon ?? ""}"
               alt=""
-                class="absolute hidden md:block right-0 sl:-right-6 sm:w-15 md:-top-4 0 md:right-80 lg:-left-25 lg:right-auto lg:-top-14.5 lg:w-19 xl:w-25 xl:-left-12.5"
+                class="absolute hidden md:block right-0 sl:-right-6 sm:w-15 md:-top-4 0 md:right-60 lg:-left-25 lg:right-auto lg:-top-14.5 lg:w-19 xl:w-25 xl:-left-12.5"
             />
 
             <!-- WordPress -->
@@ -153,7 +154,7 @@ export async function getProfile() {
             <img
               src="${gitIcon?.icon ?? ""}"
               alt=""
-              class="absolute hidden md:block sm:w-15 md:-top-25 md:-left-10 lg:left-[-150px] lg:right-auto lg:-top-80 lg:w-19 xl:w-25 xl:-left-62.5"
+              class="absolute hidden md:block sm:w-15 md:-top-10 md:-left-10 lg:left-[-150px] lg:right-auto lg:-top-80 lg:w-19 xl:w-25 xl:-left-62.5"
             />
           </div>
         </div>
@@ -161,6 +162,33 @@ export async function getProfile() {
       })
       .join("");
   } catch (error) {
-    console.error("Error loading hero:", error);
+    errorMessage.classList.add(
+      "fixed",
+      "bottom-6",
+      "left-6",
+      "z-50",
+      "flex",
+      "flex-col",
+      "gap-3",
+      "bg-gray-900",
+      "text-white",
+      "p-4",
+      "rounded-lg",
+      "shadow-lg",
+      "transition-opacity",
+      "duration-300",
+      "opacity-100",
+      "border-2",
+      "border-red-700",
+    );
+    if (!error.response) {
+      errorMessage.textContent = "مشکلی در دریافت اطلاعات بوجود آمده است";
+    } else if (error.response.status === 404) {
+      errorMessage.textContent = "اطلاعات مورد نظر یافت نشد (کد 404)";
+    } else if (error.response.status === 500) {
+      errorMessage.textContent = "مشکلی در اتصال با سرور وجود دارد";
+    } else {
+      errorMessage.textContent = "سایر خطاهای پیش بینی نشده";
+    }
   }
 }

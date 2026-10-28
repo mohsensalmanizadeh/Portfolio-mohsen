@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "JavaScript",
+    "icon": "public/img/Js.png",
+    "description": "ساخت صفحات وب تعاملی و پویا با استفاده از منطق برنامه‌نویسی."
+  },
+  {
+    "id": 2,
+    "name": "Tailwind CSS",
+    "icon": "public/img/tailwind.jpeg",
+    "description": "طراحی رابط‌های کاربری مدرن و واکنش‌گرا با کلاس‌های کاربردی."
+  },
+  {
+    "id": 3,
+    "name": "HTML",
+    "icon": "public/img/html .png",
+    "description": "ساختاردهی استاندارد صفحات وب با استفاده از تگ‌های معنایی."
+  },
+  {
+    "id": 4,
+    "name": "WordPress",
+    "icon": "public/img/wordpress.png",
+    "description": "ساخت و مدیریت وب‌سایت‌ها با استفاده از سیستم مدیریت محتوا."
+  },
+  {
+    "id": 5,
+    "name": "Git",
+    "icon": "public/img/git.png",
+    "description": "مدیریت نسخه‌های کد و پیگیری تغییرات در پروژه‌های برنامه‌نویسی."
+  },
+  {
+    "id": 6,
+    "name": "GitHub",
+    "icon": "public/img/github-light.png",
+    "description": "میزبانی مخازن کد و اشتراک‌گذاری پروژه‌های برنامه‌نویسی."
+  }
+]
