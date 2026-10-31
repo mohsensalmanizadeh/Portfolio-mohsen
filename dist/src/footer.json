@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "email": "webilio@gmail.com",
+    "email_icon": "http://127.0.0.1:8000/media/email_icon/Vector_3.png",
+    "phone": "09981350351",
+    "phone_icon": "http://127.0.0.1:8000/media/phone_icon/Vector.png"
+  }
+]

@@ -22,3 +22,11 @@ getProject();
 
 import { getSkills } from "./skills.js";
 getSkills();
+
+// import footer
+
+import { footer } from "./footer.js";
+
+const footerElement = await footer();
+
+document.querySelector("main").insertAdjacentElement("afterend", footerElement);
