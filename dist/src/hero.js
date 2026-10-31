@@ -181,6 +181,7 @@ export async function getProfile() {
       "border-2",
       "border-red-700",
     );
+    
     if (!error.response) {
       errorMessage.textContent = "مشکلی در دریافت اطلاعات بوجود آمده است";
     } else if (error.response.status === 404) {
