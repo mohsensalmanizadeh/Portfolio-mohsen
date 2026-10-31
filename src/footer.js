@@ -18,7 +18,7 @@ export async function footer() {
         <div
           class="bg-[#686767] row-span-2 flex flex-col gap-3 p-3 items-start h-full rounded-2xl lg:rounded-none text-white"
         >
-          <h3 class="font-bold text-2xl">لینک های مفید</h3>
+          <h3 class="font-bold text-lg">لینک های مفید</h3>
           <ul class="flex flex-col gap-3.5">
             <li class="text-lg"><a href="#">نمونه کار های من</a></li>
             <li class="text-lg"><a href="#">درباره من</a></li>
