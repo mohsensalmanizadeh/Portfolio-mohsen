@@ -52,16 +52,25 @@ export async function footer() {
           <h3>فضای مجازی</h3>
           <ul class="flex flex-col gap-3">
             <li class="flex gap-1 items-center text-lg">
-              <i class="fa-brands fa-telegram"></i>
+          <a href="https://t.me/Uronik" target="_blank">
+             <i class="fa-brands fa-telegram"></i>
               تلگرام
+          </a>
             </li>
+
             <li class="flex gap-1 items-center text-lg">
-              <i class="fa-brands fa-instagram"></i>
+          <a href="https://instagram.com/awat.dev" target="_blank">
+             <i class="fa-brands fa-instagram"></i>
               اینستاگرام
+          </a>
+
             </li>
             <li class="flex gap-1 items-center text-lg">
-              <i class="fa-brands fa-linkedin"></i>
+           <a href="https://www.linkedin.com/in/mohsen-salmanizadeh/" target="_blank">
+             <i class="fa-brands fa-linkedin"></i>
               لینکدین
+          </a>
+
             </li>
           </ul>
         </div>
@@ -71,6 +80,25 @@ export async function footer() {
       .join("");
     return footer;
   } catch (error) {
+    errorMessage.classList.add(
+      "fixed",
+      "bottom-6",
+      "left-6",
+      "z-50",
+      "flex",
+      "flex-col",
+      "gap-3",
+      "bg-gray-900",
+      "text-white",
+      "p-4",
+      "rounded-lg",
+      "shadow-lg",
+      "transition-opacity",
+      "duration-300",
+      "opacity-100",
+      "border-2",
+      "border-red-700",
+    );
     if (!error.response) {
       errorMessage.textContent = "مشکلی در دریافت اطلاعات بوجود آمده است";
     } else if (error.response.status === 404) {
