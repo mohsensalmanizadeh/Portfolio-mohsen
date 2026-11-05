@@ -35,12 +35,10 @@ export async function footer() {
             <li class="flex gap-1 items-center text-lg">
               <i class="fa-solid fa-phone"></i>
               <a href="tel:09981350351">${contact.phone}</a>
-              
             </li>
             <li class="flex gap-1 items-center text-[11px] md:text-lg">
               <i class="fa-solid fa-at"></i>
               <a href="mailto:webilio@gmail.com">${contact.email}</a>
-              
             </li>
           </ul>
         </div>

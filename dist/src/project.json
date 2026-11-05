@@ -5,8 +5,9 @@
     "project_type": "شخصی",
     "client": "Personal Project",
     "duration": "1 هفته",
-    "description": "یک لندینگ پیج دندان پزشکی که با تیلویند سی اس اس زده شده.",
-    "image": "public/img/tailwind.jpeg"
+    "description": "یک لندینگ پیج دندان پزشکی که با تیلویند سی اس اس  در حال تکمیل شدن است.",
+    "image": "public/img/tailwind.jpeg",
+    "link": "https://mohsensalmanizadeh.github.io/DentalCare/"
   },
   {
     "id": 2,
@@ -16,7 +17,7 @@
     "duration": "1 هفته",
     "description": "یک صفحه  خاص و تاریخی که تاریخ کشور ایران را به نمایش میگذارد.",
     "image": "public/img/html .png",
-    "link": "https://cyrus-n20xgdb5z-awatdev.vercel.app/"
+    "link": "https://mohsensalmanizadeh.github.io/Cyrus-Project/"
   },
   {
     "id": 3,
@@ -26,7 +27,7 @@
     "duration": "1 هفته",
     "description": "فروشگاه کاستومی یک فروشگاه تک صفحه ای  که کاملا متفاوت است",
     "image": "public/img/html .png",
-    "link": "https://onlineshop-9q3g9yywc-awatdev.vercel.app/"
+    "link": "https://awat-dev.github.io/customme/"
   },
   {
     "id": 4,
@@ -36,6 +37,16 @@
     "duration": "1 هفته",
     "description": "یک وبسایت شخصی برای نمایش دادن اطلاعات و مهارت های خود",
     "image": "public/img/html .png",
-    "link": "https://portfolio-two-eta-dun.vercel.app/"
+    "link": "https://mohsensalmanizadeh.github.io/Portfolio-Html-css/"
+  },
+  {
+    "id": 5,
+    "name": "Zarinpall Clone",
+    "project_type": "شخصی",
+    "client": "Personal Project",
+    "duration": "1 هفته",
+    "description": "وبسایت درگاه پرداخت زرین پال که  برای تمرین و یادگیری صفحه اصلی آن را با Tailwind Css طراحی و پیاده سازی کردم",
+    "image": "public/img/tailwind.jpeg",
+    "link": "https://awat-dev.github.io/zarinpal-clone/"
   }
 ]
